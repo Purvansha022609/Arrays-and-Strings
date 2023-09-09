@@ -1,0 +1,114 @@
+/*Name-Purvansha Gehlod
+PRN-22070123088
+EXP=7(PART E)
+C++ program to Display marks
+*/
+
+# include <iostream>
+using namespace std;
+int main()
+{
+ int marks[10] = {98, 99, 89, 96, 80, 94, 96, 82, 94, 100};
+    int search_mark, found, position_found;
+    found = 0;
+    
+    cout << "Enter the mark you want to search for: ";
+    cin >> search_mark;
+    for (int i = 0; i < 10; i++)
+    {
+        if (marks[i] == search_mark)
+        {
+            found = 1;
+            position_found = i+1;
+            cout << "The mark was found on the position: " << position_found <<endl;
+        }
+        
+    }
+    if (found == 0)
+    {
+        cout << "The value was not found.";
+    }
+
+
+/*
+Output:
+Enter the mark you want to search for: 96
+The mark was found on the position: 4
+The mark was found on the position: 7
+*/
+
+/*
+PART F
+C++ program to find the maximum and the minimum value from the given array.
+*/
+
+ {
+    int marks[10] = {60, 67, 89, 96, 80, 45, 96, 82, 94, 100};
+    int max =0;
+    for (int i = 0; i < 10; i++)
+    {
+        if (marks[i]>max)
+        {
+            max = marks[i];
+        }
+        
+    }
+    int min = max;
+    for (int j = 0; j < 10; j++)
+    {
+        if (marks[j]<min)
+        {
+            min = marks[j];
+        }
+        
+    }
+    
+    cout << "The greatest number is: " << max << endl;
+    cout << "The smallest number is: " << min<<endl;
+}
+/*
+Output:
+The greatest number is: 100
+The smallest number is: 45
+*/
+
+/*PART = G
+C++ program to find Array_Sum_Average*/
+{
+    int data[10] = {90, 89, 95, 98, 99,82,89,87,88,96};
+    int sum =0;
+    int i,avg;
+    for( i = 0; i < 11; i++)
+    {
+        sum = sum + data[i];
+        avg = sum/10;
+    }
+    cout<<"sum of the array is:"<<sum<<endl;
+    cout<<"average of the array is:"<<avg<<endl;
+}
+/*OUTPUT
+sum of the array is:1009
+average of the array is:100
+*/
+
+/*PART = H
+To Flip Element*/
+ {
+    int marks[10] = {98, 90, 99, 96, 80, 92, 94, 95, 93, 100};
+    int flip[10];
+    int j = 0;
+    for (int i = 9; i >= 0; --i)
+    {
+        flip[j] = marks[i];
+        j++;
+    }
+    for (int i =0; i<10; i++) {
+        cout << flip[i] << " "; 
+    }
+    // cout << flip[9];
+    return 0;
+}
+/*
+Output:100 93 95 94 92 80 96 99 90 98
+*/
+}
