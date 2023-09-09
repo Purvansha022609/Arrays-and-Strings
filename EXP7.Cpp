@@ -1,3 +1,140 @@
+/* Name-Purvansha Gehlod
+PRN-22070123088
+Exp-7(Part-A)
+String display
+*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string name[10];
+    int i;
+
+    cout<<"Enter the string to display :";
+
+    for(i=0;i<=10;i++)
+    {
+        cin>>name[i];
+        cout<<"The name is :"<<name[i]<<endl;
+        break;
+    }
+    return 0;
+}
+/*
+OUTPUT
+Enter the string to display :Symbiosis
+The name is :Symbiosis
+*/
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp-7(Part-B)
+String Length
+*/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char str[10] = "Symbiosis";
+    int i,length = 0;
+
+    for(i=0; str[i] !='\0'; ++i)
+    {
+        length++;
+    }
+    cout<<"Length of string is :"<<length;
+
+    return 0;
+}
+/*Output
+Length of string is :9
+*/
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp-7(Part-C)
+String concatenation*/
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string str1 = "Symbiosis";
+    string str2 = "Technology";
+    string str3 = str1 + str2;
+    int i,len,temp;
+    cout<<str3<<endl;
+    cout<<"Length of string is :"<<str3.length()<<endl;;
+    len=str3.size();
+    for(i=0; i<len/2; i++)
+    {
+        temp=str3[i];
+        str3[i]=str3[len-i-1];
+        str3[len-i-1]=temp;
+    }
+   cout<<"Given String is reversed :"<<str3;
+
+    return 0;
+}
+/*Output
+SymbiosisTechnology
+Length of string is :19
+Given String is reversed :ygolonhceTsisoibmyS
+*/
+
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp-7(Part-D)
+String Palindome or not*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string str;
+    int i, len;
+
+    cout << "Enter a string: ";
+    cin >> str;
+
+    len = str.size();
+
+    for (i = 0; i < len / 2; i++)
+    {
+        char temp = str[i];
+        str[i] = str[len - i - 1];
+        str[len - i - 1] = temp;
+    }
+
+    cout<<str<<endl;
+
+    if (str == str)
+    {
+        cout << "Palindrome" << endl;
+    }
+    else if(str != str)
+    {
+        cout << "Not a Palindrome" << endl;
+    }
+
+    return 0;
+
+
+    
+
+}
+/* OUTPUT
+Enter a string: Symbiosis
+sisoibmyS
+Palindrome
+*/
+
+
 /*Name-Purvansha Gehlod
 PRN-22070123088
 EXP=7(PART E)
@@ -111,4 +248,4 @@ To Flip Element*/
 /*
 Output:100 93 95 94 92 80 96 99 90 98
 */
-}
+
