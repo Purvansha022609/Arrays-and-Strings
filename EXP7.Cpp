@@ -133,12 +133,37 @@ Enter a string: Symbiosis
 sisoibmyS
 Palindrome
 */
-
+/*Name-Purvansha Gehlod
+PRN-22070123088
+Exp-7(Part-E)
+Enter The marks of 10 subjects and display it.
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    int marks[10] = {90,89,78,87,86,85,78,98,97,100};
+    int i;
+    for(int i = 0;i<10;++i)
+    cout<<"\nMarks"<<":"<<marks[i];
+}
+/*Output
+Marks:90 
+Marks:89 
+Marks:78 
+Marks:87 
+Marks:86 
+Marks:85 
+Marks:78 
+Marks:98 
+Marks:97 
+Marks:100
+*/
 
 /*Name-Purvansha Gehlod
 PRN-22070123088
-EXP=7(PART E)
-C++ program to Display marks
+EXP=7(PART F)
+Enter the marks of subjects from user and display it.
 */
 
 # include <iostream>
@@ -175,7 +200,7 @@ The mark was found on the position: 7
 */
 
 /*
-PART F
+PART G
 C++ program to find the maximum and the minimum value from the given array.
 */
 
@@ -209,7 +234,7 @@ The greatest number is: 100
 The smallest number is: 45
 */
 
-/*PART = G
+/*PART = H
 C++ program to find Array_Sum_Average*/
 {
     int data[10] = {90, 89, 95, 98, 99,82,89,87,88,96};
@@ -228,7 +253,7 @@ sum of the array is:1009
 average of the array is:100
 */
 
-/*PART = H
+/*PART = I
 To Flip Element*/
  {
     int marks[10] = {98, 90, 99, 96, 80, 92, 94, 95, 93, 100};
@@ -248,4 +273,3 @@ To Flip Element*/
 /*
 Output:100 93 95 94 92 80 96 99 90 98
 */
-
