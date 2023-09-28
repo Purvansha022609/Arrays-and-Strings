@@ -54,6 +54,36 @@ Length of string is :9
 
 /*Name-Purvansha Gehlod
 PRN-22070123088
+Exp-7(Part-B)
+String Length
+*/
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+int main()
+{
+string str1;
+
+    int length = 0, j=0,i,n;
+    cout << "Enter name: ";
+    cin >> str1;
+    cout << "The inputted string is: " << str1 << endl;
+    for (int i = 0; str1[i] != '\0'; i++)
+    {
+        length += 1;
+    }
+    
+    cout << "The size of the string is: " << length << endl;
+}
+/*
+OUTPUT
+Enter name: symbiosis
+The inputted string is: symbiosis
+The size of the string is: 9
+*/
+
+/*Name-Purvansha Gehlod
+PRN-22070123088
 Exp-7(Part-C)
 String concatenation*/
 #include<iostream>
