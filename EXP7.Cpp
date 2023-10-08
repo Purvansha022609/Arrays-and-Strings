@@ -250,7 +250,7 @@ Enter the marks of each subjects:
 
 /*Name-Purvansha Gehlod
 PRN-22070123088
-EXP=7(PART F)
+EXP=7(PART F)*/
 # include <iostream>
 using namespace std;
 int main()
